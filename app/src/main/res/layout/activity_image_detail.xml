@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        shimmer:duration="5000">
+
+        <ImageView
+            android:id="@+id/image_detail"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:elevation="2dp"
+            android:src="@mipmap/head"
+            android:transitionName="@string/image" />
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</RelativeLayout>
